@@ -1,0 +1,65 @@
+
+main {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    display: ;
+}
+
+#msg {
+    margin: 0 auto;
+}
+
+.inputArea {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+
+.todoArea {
+    margin: 0 auto;
+    width: 49%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.doneArea {
+    margin: 0 auto;
+    width: 49%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.newDiv {
+    margin: 5px auto;
+    padding: 10px;
+    min-width: 49%;
+    max-width: 100%;
+    height: ;
+    text-align: center;
+    background-color: yellowgreen;
+    
+    word-break: break-all;
+}
+
+h3 {
+    text-align: center;
+    width: 100%;
+}
+
+p {
+    display: flex;
+    flex-wrap: wrap;
+}
