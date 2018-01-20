@@ -38,7 +38,7 @@ textarea {
     width: 33%;
     text-align: center;
     position: relative;
-    bottom: 3pt;
+    
     border: 2pt solid #ff8c00;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -56,7 +56,7 @@ textarea {
     width: 33%;
     text-align: center;
     position: relative;
-    bottom: 3pt;
+    
     border: 2pt solid #ff8c00;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -151,7 +151,7 @@ button:active {
 
 .newDiv {
     margin:10pt;
-    padding: 20pt;
+    padding: 10pt;
     min-width: 15%;
     max-width: 100%;
     min-height: 25pt;
@@ -173,5 +173,22 @@ p {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    padding: 10pt;
+    padding: 15pt;
+}
+
+.colorPicker {
+    height: 21pt;
+    position: relative;
+    top: 7pt;
+    left: 5pt;
+    margin: auto;
+    font-family: inherit;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+
+}
+
+.colorPicker:active {
+    transform: translateY(2px);
 }

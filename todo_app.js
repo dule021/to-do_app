@@ -39,15 +39,12 @@ testButton.addEventListener("click", function(){
     })
 
 
-    var color = document.createElement("INPUT");
-    color.setAttribute("type", "color");
-    color.addEventListener("change", function(){
+    var colorPicker = document.createElement("INPUT");
+    colorPicker.setAttribute("type", "color");
+    colorPicker.setAttribute("class", "colorPicker");
+    colorPicker.addEventListener("change", function(){
         var newColor = colorPicker.value;
         newDiv.style.backgroundColor = newColor;
-    })
-    var colorPicker = document.createElement("BUTTON");
-    colorPicker.addEventListener("click", function() {
-        return color;
     })
     
     newDiv.appendChild(newParagraph);
