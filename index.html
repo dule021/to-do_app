@@ -4,30 +4,35 @@
         <meta charset="utf-8">
         <title>basic TO-DO app</title>
         <meta name="description" content="">
-        <link rel="stylesheet" href="to-do-css.css">
         <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="to-do-css.css">
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">   
     </head>
     <body>
-        <main>
-        
-           
-            <h2>Notes and reminders</h2>
+        <div class="header">
+            <h2>my notes and reminders</h2>
+        </div>
+
+        <main>          
             <div class="inputArea">
                 <textarea name="user_message" id="msg"></textarea>
             </div>
-            <div>
-                <input type="color" id="color">
-            </div>
-            <div>
-                <button id="test" type="submit">ADD</button>
+            <div class="menu">
+                <div id="toDoAreaButton">
+                    <h3>THINGS TO DO</h3>
+                </div>
+                    <button id="test" type="submit">add</button>
+                <div id="doneAreaButton">
+                    <h3>THINGS ACCOMPLISHED</h3>
+                </div>
             </div>
             
             <div class="wrapper">
             <div class="todoArea" id="newNotes">
-                <h3>Things to do :</h3>
+                
             </div>
             <div class="doneArea" id="doneNotes">
-                <h3>Things accomplished :</h3>
+                
             </div>
             </div>
         

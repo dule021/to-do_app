@@ -1,65 +1,177 @@
 
-main {
+body {
     margin: auto;
-    width: 80%;
+    width: 100%;
     text-align: center;
-    display: ;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 18pt;
+}
+
+.header {
+    margin: 0 0 10pt 0;
+    width: 100%;
+    background-color: #ff8c00;
+    padding: 25pt 0;
+    font-size: 30pt;
+    font-weight: bold;
+    color: white;
+    font-family: inherit;
+}
+
+main {
+    margin: 0 auto;
+    width: 90%;
+    font-family: inherit;
+}
+
+textarea {
+    font-family: inherit;
+    resize: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+    display: flex;
+}
+
+#toDoAreaButton {
+    width: 33%;
+    text-align: center;
+    position: relative;
+    bottom: 3pt;
+    border: 2pt solid #ff8c00;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#toDoAreaButton:hover {
+    cursor: pointer;
+    background-color: #ff8c00;
+}
+
+#toDoAreaButton:active {
+    transform: translateY(2px);
+}
+
+#doneAreaButton {
+    width: 33%;
+    text-align: center;
+    position: relative;
+    bottom: 3pt;
+    border: 2pt solid #ff8c00;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#doneAreaButton:hover {
+    cursor: pointer;
+    background-color: #ff8c00;
+}
+
+#doneAreaButton:active {
+    transform: translateY(2px);
 }
 
 #msg {
-    margin: 0 auto;
+    margin: 5pt auto;
+    width: 20%;
+    height: 100pt;
+    
+}
+
+button {
+    margin: 5pt;
+    font-family: inherit;
+    color: #ff8c00;
+    background-color: white;
+    border: none;
+    padding: 4pt 15pt;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#test {
+    margin: 5pt auto;
+    width: 15%;
+    height: 25pt;
+    font-size: 13pt;
+    font-weight: bold;
+    color: #ff8c00;
+    background-color: white;
+    border: solid;
+    border-width: 2pt;
+    border-color: #ff8c00;
+}
+
+button:hover, #test:hover {
+    color: white;
+    background-color: #ff8c00;
+    cursor: pointer;
+}
+
+button:active {
+    transform: translateY(2px);
 }
 
 .inputArea {
-    margin: 0 auto;
+    margin: 10pt auto;
     width: 100%;
     display: flex;
     text-align: center;
 }
 
+.menu {
+    margin: 10pt auto;
+    padding: 10pt;
+}
+
 .wrapper {
-    margin: 0 auto;
+    margin: 10pt auto;
     width: 100%;
-    display: flex;
     text-align: center;
 }
 
 .todoArea {
     margin: 0 auto;
-    width: 49%;
-    height: 100%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    align-items: left;
+    direction: ltr;
     text-align: center;
 }
 
 .doneArea {
     margin: 0 auto;
-    width: 49%;
-    height: 100%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    align-items: left;
+    direction: ltr;
     text-align: center;
 }
 
 .newDiv {
-    margin: 5px auto;
-    padding: 10px;
-    min-width: 49%;
+    margin:10pt;
+    padding: 20pt;
+    min-width: 15%;
     max-width: 100%;
-    height: ;
+    min-height: 25pt;
     text-align: center;
-    background-color: yellowgreen;
-    
+    background-color: #ff8c00;
+    color: white;
+    font-size: 15pt;
     word-break: break-all;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 h3 {
     text-align: center;
     width: 100%;
+    padding-top: 10pt;
 }
 
 p {
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
+    padding: 10pt;
 }
