@@ -34,7 +34,6 @@ main {
     flex-wrap: wrap;
     align-items: left;
     display: flex;
-    max-height: 300px;
 }
 
 .menu {
@@ -47,9 +46,8 @@ main {
 .inputField {
     margin: 0 auto;
     flex: 2;
-    flex-direction: column;
-    padding: 15px;
     display: flex;
+    padding: 15px;
     flex-direction: column;
     flex-wrap: wrap;
 }
@@ -160,6 +158,8 @@ button:active {
     margin: 10pt auto;
     width: 100%;
     text-align: center;
+    display: block;
+    
 }
 
 .todoArea {
