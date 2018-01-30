@@ -4,18 +4,24 @@ body {
     width: 100%;
     text-align: center;
     font-family: "Fira Sans", sans-serif;
-    font-size: 18pt;
+    font-size: 1.5em;
 }
 
 .header {
+    font-size: 70%;
     margin: 0 0 10pt 0;
     width: 100%;
     background-color: #ff8c00;
-    padding: 25pt 0;
+    padding: 15pt 0;
     font-size: 30pt;
     font-weight: bold;
     color: white;
     font-family: inherit;
+}
+
+.header h2 {
+    margin: 0 6%;
+    text-align: left;
 }
 
 main {
@@ -24,23 +30,58 @@ main {
     font-family: inherit;
 }
 
-textarea {
-    font-family: inherit;
-    resize: none;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+.inputArea {
+    flex-wrap: wrap;
+    align-items: left;
+    display: flex;
+    max-height: 300px;
 }
 
 .menu {
+    margin: 0 auto;
+    flex: 1;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.inputField {
+    margin: 0 auto;
+    flex: 2;
+    flex-direction: column;
+    padding: 15px;
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+textarea {
+    font-family: inherit;
+    display: block;
+    resize: none;
+    min-width: 200px;
+    width: 600px;
+    min-height: 180px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 5pt auto;
+    width: 50%;
+    height: 70%;
+}
+
+#menu {
+    color: lightgray;
+    font-weight: bold;
+}
+
+#inputMenu {
+    color: lightgray;
+    margin: auto;
+    font-weight: bold;
 }
 
 #toDoAreaButton {
-    width: 33%;
-    text-align: center;
-    position: relative;
-    
-    border: 2pt solid #ff8c00;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 10px auto;
+    border: 1pt solid #ff8c00;
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
 }
 
 #toDoAreaButton:hover {
@@ -53,12 +94,9 @@ textarea {
 }
 
 #doneAreaButton {
-    width: 33%;
-    text-align: center;
-    position: relative;
-    
-    border: 2pt solid #ff8c00;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 10px auto;
+    border: 1pt solid #ff8c00;
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
 }
 
 #doneAreaButton:hover {
@@ -70,11 +108,19 @@ textarea {
     transform: translateY(2px);
 }
 
-#msg {
-    margin: 5pt auto;
-    width: 20%;
-    height: 100pt;
-    
+#saveButton {
+    margin: 10px auto;
+    border: 1pt solid lightgray;
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+}
+
+#saveButton:hover {
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+#saveButton:active {
+    transform: translateY(2px);
 }
 
 button {
@@ -89,8 +135,8 @@ button {
 
 #test {
     margin: 5pt auto;
-    width: 15%;
-    height: 25pt;
+    min-width: 200px;
+    padding: 5px;
     font-size: 13pt;
     font-weight: bold;
     color: #ff8c00;
@@ -110,19 +156,7 @@ button:active {
     transform: translateY(2px);
 }
 
-.inputArea {
-    margin: 10pt auto;
-    width: 100%;
-    display: flex;
-    text-align: center;
-}
-
-.menu {
-    margin: 10pt auto;
-    padding: 10pt;
-}
-
-.wrapper {
+#wrapper {
     margin: 10pt auto;
     width: 100%;
     text-align: center;
@@ -161,12 +195,13 @@ button:active {
     font-size: 15pt;
     word-break: break-all;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
+}  
 
 h3 {
-    text-align: center;
+    font-size: 80%;
+    text-align: left;
     width: 100%;
-    padding-top: 10pt;
+    padding: 10px;
 }
 
 p {
@@ -174,21 +209,4 @@ p {
     flex-wrap: wrap;
     text-align: center;
     padding: 15pt;
-}
-
-.colorPicker {
-    height: 21pt;
-    position: relative;
-    top: 7pt;
-    left: 5pt;
-    margin: auto;
-    font-family: inherit;
-    border: none;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    background-color: white;
-
-}
-
-.colorPicker:active {
-    transform: translateY(2px);
 }
